@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Posts</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Posts</h1>
+      <button id="loadPosts">Load Posts</button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="" class="nav__link"> Posts</a>
+          </li>
+          <li><a href="" class="nav__link"> Player</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <ul class="posts" id="posts-container"></ul>
+      <aside class="side-bar">
+        <button id="sortBtn">Sort by Title</button>
+        <h2>Users</h2>
+        <ul class="filter" id="filterList"></ul>
+      </aside>
+    </main>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
