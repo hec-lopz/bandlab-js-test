@@ -2,7 +2,7 @@ import { filterPosts } from "./Posts.js";
 
 export const createUserListItem = ({ name, id }) => {
   const li = document.createElement("li");
-  li.className = "filter__item";
+  li.className = "list__item";
   li.dataset.id = id;
   li.dataset.userName = name;
   li.innerText = name;

@@ -49,6 +49,10 @@ a {
 .nav__list {
   display: flex;
 }
+.nav__list-item.active {
+  border-bottom: 3px solid #b91646;
+}
+
 .nav__list-item:first-child {
   border-right: 1px solid black;
 }
@@ -68,15 +72,16 @@ a {
   margin-left: 2rem;
 }
 
-.filter__item {
+.list__item {
   font-size: 1.6rem;
+  text-transform: capitalize;
   padding: 1rem;
   cursor: pointer;
 }
-.filter__item + .filter__item {
+.list__item + .list__item {
   margin-top: 1rem;
 }
-.filter__item:hover {
+.list__item:hover {
   background-color: var(--secondary-color);
 }
 
