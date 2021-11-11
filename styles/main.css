@@ -110,3 +110,27 @@ a {
 .card__body::first-letter {
   text-transform: capitalize;
 }
+
+.player {
+  background-color: var(--secondary-color);
+  height: min-content;
+  padding: 1.5rem;
+}
+.player__controls {
+  display: flex;
+}
+
+.player__title {
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+
+.player__volume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+.player__volume span {
+  margin-top: 1rem;
+}

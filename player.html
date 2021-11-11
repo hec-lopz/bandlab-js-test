@@ -28,14 +28,40 @@
       </nav>
     </header>
     <main class="main-container">
-      <div class="player" id="player"></div>
+      <div class="player" id="player">
+        <h3 class="player__title">New Wave Kit</h3>
+        <div class="player__controls">
+          <button class="player__play-btn" id="playBtn"></button>
+          <label for="volume" class="player__volume">
+            <input
+              id="volume"
+              class="player__volume"
+              type="range"
+              min="0"
+              max="2"
+              value="1"
+              step="0.01"
+            />
+            <span>VOL</span>
+          </label>
+        </div>
+        <audio
+          data-name="new wave kit"
+          data-track-id="1"
+          src="./assets/new-wave-kit.ogg"
+        ></audio>
+        <audio
+          data-name="synth organ"
+          data-track-id="2"
+          src="./assets/synth-organ.ogg"
+        ></audio>
+      </div>
+
       <aside class="side-bar">
         <h2>Music</h2>
-        <ul class="playlist" id="playlist list">
-          <li class="playlist__item list__item">new wave kit</li>
-          <li class="playlist__item list__item">synth organ</li>
-        </ul>
+        <ul class="playlist list" id="playlist"></ul>
       </aside>
     </main>
+    <script src="js/player/index.js" type="module"></script>
   </body>
 </html>
