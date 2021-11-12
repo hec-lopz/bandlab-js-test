@@ -14,8 +14,8 @@ And then open the file `index.html` in your web browser.
 
 ## Links
 
-Live demo:
-Repository: [Link to repository](https://github.com/hec-lopz/js-test)
+- Live demo: [Demo](https://hec-lopz.github.io/js-test/)
+- Repository: [Link to repository](https://github.com/hec-lopz/js-test)
 
 ## Useful resources
 
