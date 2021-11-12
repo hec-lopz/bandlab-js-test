@@ -19,11 +19,12 @@ const fillPlaylist = (eventHandler) => {
     const { id, name, url } = track;
     htmlEl.className = "list__item";
     htmlEl.dataset.trackId = id;
+    htmlEl.dataset.name = name;
     htmlEl.innerText = name;
     htmlEl.addEventListener("click", (e) => {
-      const { trackId } = e.target.dataset;
+      const { trackId, name } = e.target.dataset;
       console.log(e.target.dataset);
-      eventHandler(trackId);
+      eventHandler(trackId, name);
     });
     return htmlEl;
   });

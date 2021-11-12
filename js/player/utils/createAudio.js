@@ -12,6 +12,7 @@ volumeControl.addEventListener(
 
 const createAudio = (btn) => {
   audioCtx.resume();
+  const playerTitle = document.querySelector(".player__title");
   const media1 = document.querySelector(`[data-track-id="1"]`);
   const media2 = document.querySelector(`[data-track-id="2"]`);
   const tracks = [media1, media2];
@@ -20,7 +21,7 @@ const createAudio = (btn) => {
   track1.connect(gainNode).connect(audioCtx.destination);
   track2.connect(gainNode).connect(audioCtx.destination);
   let currentlyPlaying;
-  return (id) => {
+  return (id, name) => {
     btn.disabled = false;
     btn.innerText = "Pause";
     if (
@@ -40,7 +41,7 @@ const createAudio = (btn) => {
 
       return;
     }
-
+    playerTitle.innerText = name;
     currentlyPlaying?.pause();
     currentlyPlaying = tracks[id - 1];
     tracks[id - 1].currentTime = 0;
